@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Noto';
+        font-style: normal;
+        font-display: swap;
+        src: url(assets/fonts/Noto.ttf);
+    }
+    @font-face {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-display: swap;
+        src: url(assets/fonts/RobotoCondensed.ttf);
+    }
+
+    h1, h2 {
+        @apply font-title;
+    }
+
+    h3, h4, h5, h6, p {
+        @apply font-body
+    }
+}
