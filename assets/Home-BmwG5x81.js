@@ -1,1 +1,0 @@
-import{o as e,u as t,c as a,a as o}from"./index-CznMsoLu.js";const c={class:"text-8xl font-title"},u={__name:"Home",setup(s){return e(()=>{t({title:"Accueil - Fred Bardou"})}),(n,r)=>(o(),a("h1",c,"Accueil Papa"))}};export{u as default};
