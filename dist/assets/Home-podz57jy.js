@@ -1,1 +1,0 @@
-import{o as e,u as t,c as o,a as c}from"./index-BQCPhrYX.js";const a={class:"text-8xl font-title"},u={__name:"Home",setup(s){return e(()=>{t({title:"Accueil - Fred Bardou"})}),(n,r)=>(c(),o("h1",a,"Accueil"))}};export{u as default};
