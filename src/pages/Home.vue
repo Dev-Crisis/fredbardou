@@ -11,7 +11,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <h1 class="text-8xl font-title">Accueil Papa</h1>
+  <h1 class="text-8xl font-title">Accueil Test</h1>
 </template>
 
 <style scoped>
