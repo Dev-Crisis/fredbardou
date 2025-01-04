@@ -5,7 +5,7 @@ import {useHead} from "@vueuse/head";
 
 onMounted(() => {
   useHead({
-    title: 'Frédéric Bardou | Service à domicile'
+    title: 'Frédéric Bardou | Service à domicile - Contact'
   })
 });
 </script>

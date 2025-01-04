@@ -5,6 +5,8 @@ import Footer from './components/globals/Footer.vue'
 
 <template>
   <Header/>
-  <RouterView/>
+  <main class="mt-28 min-h-screen">
+    <RouterView/>
+  </main>
   <Footer/>
 </template>
