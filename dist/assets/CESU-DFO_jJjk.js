@@ -1,1 +1,0 @@
-import{h as e,u as t,c,o}from"./index-CRIRZkiD.js";const s={class:"text-8xl font-title"},l={__name:"CESU",setup(a){return e(()=>{t({title:"Frédéric Bardou | Service à domicile - CESU"})}),(r,n)=>(o(),c("h1",s,"Accueil Test"))}};export{l as default};
