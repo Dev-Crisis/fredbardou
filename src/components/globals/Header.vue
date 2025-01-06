@@ -15,17 +15,27 @@ const toggleMenuState = () => {
 </script>
 <template>
   <header class="fixed w-full bg-fbInteractive shadow-lg p-2">
-    <div class="flex w-full justify-between items-center px-5">
+    <nav class="hidden md:flex justify-center items-center gap-12">
+      <RouterLink class="text-xl" @click.passive="toggleMenuState" to="/">Accueil</RouterLink>
+      <RouterLink class="text-xl" @click.passive="toggleMenuState" to="/services">Services</RouterLink>
       <Image height="60px" width="44px" alt="Logo de Frédéric Bardou" :src="logo"/>
-      <AlignJustify :size="36" @click.passive="toggleMenuState"/>
+      <RouterLink class="text-xl" @click.passive="toggleMenuState" to="/cesu">CESU</RouterLink>
+      <RouterLink class="text-xl" @click.passive="toggleMenuState" to="/contact">Contact</RouterLink>
+    </nav>
+    <div class="flex w-full justify-between items-center px-5 md:hidden">
+      <Image height="60px" width="44px" alt="Logo de Frédéric Bardou" :src="logo"/>
+      <AlignJustify :size="36" @click.passive="toggleMenuState" class="md:hidden"/>
     </div>
-    <nav class="bg-fbBackground absolute min-h-screen top-0 -left-full transition-all duration-300 w-full flex items-center justify-center"
-         :class="isOpen ? '!left-0 z-10' : ''">
-      <X :size="36" @click.passive="toggleMenuState"/>
-      <RouterLink to="/">Accueil</RouterLink>
-      <RouterLink to="/services">Services</RouterLink>
-      <RouterLink to="/cesu">CESU</RouterLink>
-      <RouterLink to="/contact">Contact</RouterLink>
+    <nav
+        class="md:hidden bg-fbBackground absolute min-h-screen top-0 -left-full transition-all duration-300 w-full flex flex-col items-center justify-center"
+        :class="isOpen ? '!left-0 z-10' : ''">
+      <X class="absolute top-5 right-6 md:hidden" :size="36" @click.passive="toggleMenuState"/>
+      <div class="flex items-start flex-col justify-center gap-5">
+        <RouterLink class="text-4xl" @click.passive="toggleMenuState" to="/">Accueil</RouterLink>
+        <RouterLink class="text-4xl" @click.passive="toggleMenuState" to="/services">Services</RouterLink>
+        <RouterLink class="text-4xl" @click.passive="toggleMenuState" to="/cesu">CESU</RouterLink>
+        <RouterLink class="text-4xl" @click.passive="toggleMenuState" to="/contact">Contact</RouterLink>
+      </div>
     </nav>
   </header>
 </template>

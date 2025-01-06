@@ -14,7 +14,8 @@ export default {
                 'fbText': '#3DD68C',
                 'fbText2': '#B1F1CB',
                 'fbBorder': '#28684A',
-                'fbInteractive': '#113B29',
+                'fbInteractive': '#174933',
+                'fbInteractive2': '#132D21',
                 'fbBackground': '#121B17',
                 'fbBackground2': '#0E1512',
             }

@@ -22,5 +22,5 @@ defineProps({
 </script>
 
 <template v-once>
-  <img :width="width" :height="height" loading="lazy" :alt="alt" :src="src"/>
+  <img :width="width" :height="height" loading="lazy" :alt="alt" :title="alt" :src="src"/>
 </template>
