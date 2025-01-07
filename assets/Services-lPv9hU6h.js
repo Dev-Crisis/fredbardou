@@ -1,1 +1,0 @@
-import{l as e,k as t,c,o as s}from"./index-BC9IuZgS.js";const o={class:"text-8xl font-title"},n={__name:"Services",setup(r){return e(()=>{t({title:"Frédéric Bardou | Service à domicile - Services"})}),(a,i)=>(s(),c("h1",o,"Accueil Test"))}};export{n as default};
