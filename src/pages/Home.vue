@@ -47,7 +47,7 @@ const extras = [
     price: 20,
     image: pool,
     details: ['Tonte de gazon', 'Création de potager', 'Rempotage', 'Taillage de haie (<2m)'],
-    link: "/services#jardinier"
+    link: "/services#entretien-piscine"
   },
   {
     id: 2,
@@ -55,7 +55,7 @@ const extras = [
     price: 20,
     image: car,
     details: ['Pharmacie', 'Courses', 'Rempotage', 'Récupérer/Déposer un colis'],
-    link: "/services#service-a-domicile"
+    link: "/services#entretien-auto"
   }
 ]
 
@@ -75,7 +75,7 @@ onBeforeMount(() => {
 </script>
 
 <template>
-  <section class="px-5 lg:px-12 pb-6 grid grid-cols-1 place-items-center lg:grid-cols-2 gap-16">
+  <section class="px-5 lg:px-12 grid grid-cols-1 place-items-center lg:grid-cols-2 gap-16 min-h-[75vh]">
     <div class="flex items-start justify-center flex-col gap-5">
       <h1 class="text-6xl lg:text-7xl xl:text-7xl 2xl:text-8xl">Frédéric Bardou</h1>
       <h2 class="uppercase text-lg md:text-xl lg:text-3xl">simplifiez-vous la vie quotidienne</h2>
@@ -84,20 +84,20 @@ onBeforeMount(() => {
            :src="gardenIllustration"/>
   </section>
   <section
-      class="bg-fbBackground min-h-[calc(100vh/2)] flex items-center justify-start py-12 px-6 md:p-12 flex-col gap-12">
+      class="bg-fbBackground flex items-center justify-start py-12 px-6 md:p-12 flex-col gap-12">
     <h3 class="font-title text-5xl xl:text-6xl">Services</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full place-items-center gap-12 max-w-[1500px]">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full place-items-stretch gap-12 max-w-[1500px]">
       <ServiceCard v-for="service in services" :key="service.id" :service="service"/>
     </div>
   </section>
   <section
-      class="bg-fbBackground2 min-h-[calc(100vh/2)] flex items-center justify-start py-12 px-6 md:p-12 flex-col gap-12">
+      class="bg-fbBackground2 flex items-center justify-start py-12 px-6 md:p-12 flex-col gap-12">
     <h3 class="font-title text-5xl xl:text-6xl">Extras</h3>
     <div class="grid grid-cols-1 lg:grid-cols-2 w-full place-items-center gap-12 max-w-[1500px]">
       <ServiceCard v-for="extra in extras" :key="extra.id" :service="extra"/>
     </div>
   </section>
-  <section class="bg-fbBackground min-h-[calc(100vh/2)] flex items-center justify-start py-12 flex-col gap-5">
+  <section class="bg-fbBackground flex items-center justify-start py-12 flex-col gap-5">
     <h3 class="font-title text-5xl xl:text-6xl">Le CESU</h3>
     <h4 class="lg:text-xl">Le CESU c'est quoi</h4>
     <div class="grid grid-col-1 place-items-center lg:grid-cols-2 p-6 gap-6">

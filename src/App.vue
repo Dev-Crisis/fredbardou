@@ -12,9 +12,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <Header/>
+  <Header v-once/>
   <main class="mt-28 min-h-screen">
     <RouterView/>
   </main>
-  <Footer/>
+  <Footer v-once/>
 </template>

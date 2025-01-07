@@ -18,12 +18,12 @@ const toggleMenuState = () => {
     <nav class="hidden md:flex justify-center items-center gap-12">
       <RouterLink class="text-xl" @click.passive="toggleMenuState" to="/">Accueil</RouterLink>
       <RouterLink class="text-xl" @click.passive="toggleMenuState" to="/services">Services</RouterLink>
-      <Image height="60px" width="44px" alt="Logo de Frédéric Bardou" :src="logo"/>
+      <RouterLink to="/"><Image height="60px" width="44px" alt="Logo de Frédéric Bardou" :src="logo"/></RouterLink>
       <RouterLink class="text-xl" @click.passive="toggleMenuState" to="/cesu">CESU</RouterLink>
       <RouterLink class="text-xl" @click.passive="toggleMenuState" to="/contact">Contact</RouterLink>
     </nav>
     <div class="flex w-full justify-between items-center px-5 md:hidden">
-      <Image height="60px" width="44px" alt="Logo de Frédéric Bardou" :src="logo"/>
+      <RouterLink to="/"><Image height="60px" width="44px" alt="Logo de Frédéric Bardou" :src="logo"/></RouterLink>
       <AlignJustify :size="36" @click.passive="toggleMenuState" class="md:hidden"/>
     </div>
     <nav

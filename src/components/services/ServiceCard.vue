@@ -10,11 +10,11 @@ defineProps({
 <template>
 
   <div
-      class="bg-fbInteractive text-fbText2 w-full rounded-lg h-[450px] border border-fbBorder flex items-center justify-start flex-col gap-5">
+      class="bg-fbInteractive text-fbText2 w-full rounded-lg border border-fbBorder flex items-center justify-start flex-col gap-5 pb-2">
     <Image height="100px" width="350px" :alt="service.name" :src="service.image"
            class="object-left-top object-cover h-[150px] w-full rounded-t-md"/>
     <h4 class="font-title uppercase text-3xl">{{ service.name }}</h4>
-    <ul class="w-full px-4">
+    <ul class="w-full px-4 min-h-[100px]">
       <li :key="detail.id" v-for="detail in service.details">
         <h5 class="text-xl">- {{ detail }}</h5>
       </li>
