@@ -16,11 +16,15 @@ defineProps({
   height: {
     type: String,
     required: true,
+  },
+  lazy: {
+    type: Boolean,
+    default: true
   }
 });
 
 </script>
 
 <template v-once>
-  <img :width="width" :height="height" loading="lazy" :alt="alt" :title="alt" :src="src"/>
+  <img :width="width" :height="height" :loading="lazy ? 'lazy': 'eager'" :alt="alt" :title="alt" :src="src.toString()"/>
 </template>

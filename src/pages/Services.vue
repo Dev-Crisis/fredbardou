@@ -45,7 +45,7 @@ const services = [
     price: 20,
     preDetails: "Pour l’entretien piscine, je propose les services suivants : ",
     image: pool,
-    details: ['Tonte de gazon', 'Création de potager', 'Rempotage', 'Taillage de haie (<2m)'],
+    details: ['Passage du balai de fond', 'Remplacement des produits présents', 'Nettoyage de la ligne d’eau', 'Remplissage de la piscine'],
     link: "entretien-piscine"
   },
   {
@@ -54,7 +54,7 @@ const services = [
     price: 20,
     preDetails: "Pour le nettoyage auto, je propose les services suivants : ",
     image: car,
-    details: ['Pharmacie', 'Courses', 'Rempotage', 'Récupérer/Déposer un colis'],
+    details: ['Passage de l’aspirateur (moquette & sièges)', 'Nettoyage de la carrosserie à la main sans eau (toutes carrosseries)', 'Rénovation des phares et des plastiques intérieur & extérieur', 'Lavage du plafonnier'],
     link: "entretien-auto"
   }
 ]
@@ -82,7 +82,7 @@ onMounted(() => {
          :id="service.link">
       <div class="flex items-start justify-center flex-col gap-5"
            :class="service.id % 2 ? 'order-1 md:order-2' : 'order-1 md:order-1'">
-        <h3 class="text-6xl lg:text-7xl xl:text-7xl 2xl:text-8xl text-left">{{ service.name }}</h3>
+        <h3 class="text-5xl lg:text-7xl xl:text-7xl 2xl:text-8xl">{{ service.name }}</h3>
         <h4 class="text-lg md:text-xl lg:text-3xl text-left">{{ service.preDetails }}</h4>
         <ul class="text-lg md:text-xl lg:text-3xl text-left">
           <li v-for="detail in service.details" :key="detail.id">

@@ -46,7 +46,7 @@ const extras = [
     name: "Entretien Piscine",
     price: 20,
     image: pool,
-    details: ['Tonte de gazon', 'Création de potager', 'Rempotage', 'Taillage de haie (<2m)'],
+    details: ['Passage du balai de fond', 'Remplacement des produits présents', 'Nettoyage de la ligne d’eau', 'Remplissage de la piscine'],
     link: "/services#entretien-piscine"
   },
   {
@@ -54,7 +54,7 @@ const extras = [
     name: "Entretien Auto",
     price: 20,
     image: car,
-    details: ['Pharmacie', 'Courses', 'Rempotage', 'Récupérer/Déposer un colis'],
+    details: ['Passage de l’aspirateur (moquette & sièges)', 'Nettoyage de la carrosserie à la main sans eau (toutes carrosseries)', 'Rénovation des phares et des plastiques intérieur & extérieur', 'Lavage du plafonnier'],
     link: "/services#entretien-auto"
   }
 ]
@@ -80,7 +80,7 @@ onBeforeMount(() => {
       <h1 class="text-6xl lg:text-7xl xl:text-7xl 2xl:text-8xl">Frédéric Bardou</h1>
       <h2 class="uppercase text-lg md:text-xl lg:text-3xl">simplifiez-vous la vie quotidienne</h2>
     </div>
-    <Image height="350px" width="350px" alt="Personne paisible" class="md:w-[500px] xl:w-[600px]"
+    <Image :lazy="false" height="350px" width="350px" alt="Personne paisible" class="md:w-[500px] xl:w-[600px]"
            :src="gardenIllustration"/>
   </section>
   <section
