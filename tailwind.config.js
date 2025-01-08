@@ -7,13 +7,17 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                title: ['Noto', 'sans-serif'],
+                title: ['Kanit', 'sans-serif'],
                 body: ['Roboto Condensed'],
             },
             colors: {
-                'fbWhite': '#E6EEEA',
-                'fbLightGreen': '#7EE16C',
-                'fbDarkGreen': '#196D2F',
+                'fbText': '#3DD68C',
+                'fbText2': '#B1F1CB',
+                'fbBorder': '#28684A',
+                'fbInteractive': '#174933',
+                'fbInteractive2': '#132D21',
+                'fbBackground': '#121B17',
+                'fbBackground2': '#0E1512',
             }
         }
     },

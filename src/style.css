@@ -4,10 +4,10 @@
 
 @layer base {
     @font-face {
-        font-family: 'Noto';
+        font-family: 'Kanit';
         font-style: normal;
         font-display: swap;
-        src: url(assets/fonts/Noto.ttf);
+        src: url(assets/fonts/Kanit.ttf);
     }
     @font-face {
         font-family: 'Roboto Condensed';
@@ -16,11 +16,30 @@
         src: url(assets/fonts/RobotoCondensed.ttf);
     }
 
-    h1, h2 {
-        @apply font-title;
+    h1, h3 {
+        @apply font-title text-fbText uppercase;
     }
 
-    h3, h4, h5, h6, p {
-        @apply font-body
+    textarea::placeholder, input::placeholder{
+        @apply text-fbInteractive2 font-light text-xl;
+    }
+}
+
+
+.bounce-enter-active {
+    animation: bounce-in 0.5s;
+}
+.bounce-leave-active {
+    animation: bounce-in 0.5s reverse;
+}
+@keyframes bounce-in {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1);
     }
 }
