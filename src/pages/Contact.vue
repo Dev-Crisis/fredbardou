@@ -1,17 +1,8 @@
 <script setup>
-
-import {onMounted} from "vue";
-import {useHead} from "@vueuse/head";
 import contactIllustration from "@assets/illustrations/contact-2-illustration.svg";
 import Image from "@components/globals/Image.vue";
 import contact from "@assets/images/contact.webp";
 import CTA from "@components/globals/CTA.vue";
-
-onMounted(() => {
-  useHead({
-    title: 'Frédéric Bardou | Service à domicile - Contact'
-  })
-});
 </script>
 
 <template>
@@ -24,9 +15,9 @@ onMounted(() => {
            :src="contactIllustration"/>
   </section>
   <section
-      class="bg-fbBackground w-full flex items-center justify-center flex-wrap md:justify-between gap-16 p-6 md:p-24">
+      class="bg-fb-background w-full flex items-center justify-center flex-wrap md:justify-between gap-16 p-6 md:p-24">
     <Image height="350px" width="350px"
-           class="md:w-[500px] xl:w-[600px] aspect-[4/3] object-cover rounded-lg w-full md:max-w-[45%]"
+           class="md:w-[500px] xl:w-[600px] aspect-4/3 object-cover rounded-lg w-full md:max-w-[45%]"
            alt="CESU"
            :src="contact"/>
     <div class="flex items-start justify-center flex-col gap-5 w-full md:w-[45%]">

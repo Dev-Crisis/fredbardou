@@ -1,6 +1,35 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --font-title: Kanit, sans-serif;
+  --font-body: Roboto Condensed;
+
+  --color-fb-text: #3dd68c;
+  --color-fb-text2: #b1f1cb;
+  --color-fb-border: #28684a;
+  --color-fb-interactive: #174933;
+  --color-fb-interactive2: #132d21;
+  --color-fb-background: #121b17;
+  --color-fb-background2: #0e1512;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 @layer base {
     @font-face {
@@ -17,11 +46,11 @@
     }
 
     h1, h3 {
-        @apply font-title text-fbText uppercase;
+        @apply font-title text-fb-text uppercase;
     }
 
     textarea::placeholder, input::placeholder{
-        @apply text-fbInteractive2 font-light text-xl;
+        @apply text-fb-interactive2 font-light text-xl;
     }
 }
 
