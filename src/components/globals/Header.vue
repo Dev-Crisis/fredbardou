@@ -14,7 +14,7 @@ const toggleMenuState = () => {
 
 </script>
 <template>
-  <header class="fixed w-full bg-fbInteractive shadow-lg p-2">
+  <header class="fixed w-full bg-fb-interactive shadow-lg p-2">
     <nav class="hidden md:flex justify-center items-center gap-12">
       <RouterLink class="text-xl" @click.passive="toggleMenuState" to="/">Accueil</RouterLink>
       <RouterLink class="text-xl" @click.passive="toggleMenuState" to="/services">Services</RouterLink>
@@ -27,8 +27,8 @@ const toggleMenuState = () => {
       <AlignJustify :size="36" @click.passive="toggleMenuState" class="md:hidden"/>
     </div>
     <nav
-        class="md:hidden bg-fbBackground absolute min-h-screen top-0 -left-full transition-all duration-300 w-full flex flex-col items-center justify-center"
-        :class="isOpen ? '!left-0 z-10' : ''">
+        class="md:hidden bg-fb-background absolute min-h-screen top-0 -left-full transition-all duration-300 w-full flex flex-col items-center justify-center"
+        :class="isOpen ? 'left-0! z-10' : ''">
       <X class="absolute top-5 right-6 md:hidden" :size="36" @click.passive="toggleMenuState"/>
       <div class="flex items-start flex-col justify-center gap-5">
         <RouterLink class="text-4xl" @click.passive="toggleMenuState" to="/">Accueil</RouterLink>
